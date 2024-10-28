@@ -9,5 +9,3 @@
 ### Describe your work (models, analysis, EDA, etc.)
 
 ### Describe your results
-
-### Party!

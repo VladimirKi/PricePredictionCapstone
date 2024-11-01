@@ -31,7 +31,7 @@ The primary datasets include:
 •	Evaluation: Assess models accuracy using MAE (mean absolute error) or others, focusing on prediction accuracy on 3 months and over longer time windows.
 
 ### Describe your results
-Expected results will include a model that performs competitively against regression, with improved predictive accuracy for mid- to long-term stock price movements. Ideally, the model will highlight how integrating time-series and financial statements can enhance predictive capabilities. Results will include:
+Expected results will include a model that performs competitively against Simple Moving Average as benchmark, with improved predictive accuracy for mid- to long-term stock price movements. Ideally, the model will highlight how integrating time-series and financial statements can enhance predictive capabilities. Results will include:
 •	Performance comparison of various models, demonstrating the most effective approach over different groups of stocks.
 •	Key insights into which financial and technical factors are most predictive of stock price movement (optional).
 •	Potential strategies for integrating these predictions into an investment framework, showing how this tool could support value-oriented investing strategies (optional).

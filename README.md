@@ -42,3 +42,11 @@ Built an RNN model for pure price prediction (prediction based only on prices) f
 Next I apply MinMaxScaler to normalise the datasets, to prepare the data  for modeling. For each prediction (forecast) I created a sliding window of historical data points - Lookback - to predict the next value. Next, I set the model itself: 4 layers of SimpleRNN units equal in number to Lookback, with dropout=0.2 to prevent overfitting and other parameters. Then I visulize the results: first train set only, then train and test together, then train,test and SMA that I add as a baseline prediction. The code calculates MSE, Mean Squared Error for train, test and SMA. Comparison analysis of MSE didn't produce any meaningful results.
 
 Also I integrated financial metrics from the financial statement data by merging it with price data.
+
+### Sprint 3
+Built 4 comparable models based on the model from Sprint 2: 2 RNN models (univariate and multivariate) and 2 LSTM models (univariate and multivariate). All models were built on the same data: same monthly data from 2009 to 2017, same 9 stocks - the data that is present for . All 4 models also had the same specifications of the models: 75%/25% train/test split, MinMax scaler, 4 layers of Simple RNN/ LSTM units equal in number to lookback, dropout = 0.2, 50 epochs. The differences were: the model being used - RNN or LSTM and different number of variables: 1 - for univariate model (prices only), and 23 for multivariate model (prices plus financial statements).
+Added calculation of MSE and saving it into csv and reading it from csv to compare 4 models' MSE across in one chart. Made a relative comparison of models' MSE. Results show that by and large model 1 - univariate RNN model with prices only - is the most attractive model in terms of accuracy. Other models deserve additional attention in the conditions outside of this comparison (more on that below).
+
+To further develop project in the future, I define the following areas of research:
+- Explore bigger number of nodes, especially in models 2 and 4 - multivariate models.
+- Add variables stepwise, little by little, especially in models 2 and 4 the multivariate models. 
